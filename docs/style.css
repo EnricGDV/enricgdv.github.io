@@ -36,6 +36,7 @@ p{
   padding-left: 36px;
   background-image: linear-gradient(rgb(6,0,71),rgb(43,52,103));
   overflow: auto;
+  z-index: 1;
 }
 .top-header
 {
@@ -131,6 +132,7 @@ p{
   text-align: center;
   font-size: 52px;
   color: white;
+  text-decoration: none;
   background-image: linear-gradient(rgb(233, 0, 100),rgb(235, 69, 95));
   transition: padding-top 0.2s, padding-bottom 0.2s;
 }
@@ -191,6 +193,7 @@ p{
   text-align: center;
   font-size: 18px;
   color: rgb(233, 0, 100);
+  text-decoration: none;
   background-color: white;
   transition: padding-top 0.2s, padding-bottom 0.2s;
 }
@@ -216,25 +219,55 @@ p{
 .iconoir-figma {
   font-size: 64px;
 }
+
+/* Footer Style*/
 .footer-block {
+  display: flex;
   padding: 32px;
   width: 100%;
   background-image: linear-gradient(rgb(181, 234, 234),rgb(186, 215, 233));
 }
-.project {
-  display: flex;
+.footer-left {
+  float: left;
   width: 60%;
 }
-.citm-logo {
-  width:initial;
+.footer-right {
+  float: right;
+  width: 40%;
 }
+/*Project Style*/
+.project {
+  display: flex;
+}
+.citm-logo {
+  width:83px;
+  height:83px;
+}
+/*Credits Style*/
 .credits {
   padding-top: 32px;
   display: flex;
-  width: 60%;
 }
-.iconoir-linkedin
-{
+.iconoir-linkedin {
   font-size: 64px;
   color: rgb(6,0,71);
+}
+.button-footer {
+  border: none;
+  text-decoration: none;
+  background-color: transparent;
+}
+.button-footer:hover {
+  .iconoir-linkedin {
+    color: rgb(43,52,103);
+  }
+}
+.button-footer:active {
+  .iconoir-linkedin {
+    color: rgb(252,255,231);
+  }
+}
+/*Licenses Style*/
+.licenses {
+  text-align: right;
 }
