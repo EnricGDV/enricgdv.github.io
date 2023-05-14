@@ -1,3 +1,4 @@
+/* -------------------- GENERAL -------------------- */
 /*General style*/
 *{
   margin: 0;
@@ -29,6 +30,72 @@ p{
   padding-left: 16px;
 }
 
+/*Section title style*/
+.section-title {
+  padding-top: 96px;
+  padding-left: 128px;
+  padding-right: 128px;
+}
+.underline {
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: rgb(6,0,71);
+}
+
+/* Footer Style*/
+.footer-block {
+  display: flex;
+  padding: 32px;
+  width: 100%;
+  background-image: linear-gradient(rgb(181, 234, 234),rgb(186, 215, 233));
+}
+.footer-left {
+  float: left;
+  width: 60%;
+}
+.footer-right {
+  float: right;
+  width: 40%;
+}
+/*Project Style*/
+.project {
+  display: flex;
+}
+.citm-logo {
+  width:83px;
+  height:83px;
+}
+/*Credits Style*/
+.credits {
+  padding-top: 32px;
+  display: flex;
+}
+.iconoir-linkedin {
+  font-size: 64px;
+  color: rgb(6,0,71);
+}
+.button-footer {
+  border: none;
+  text-decoration: none;
+  background-color: transparent;
+}
+.button-footer:hover {
+  .iconoir-linkedin {
+    color: rgb(43,52,103);
+  }
+}
+.button-footer:active {
+  .iconoir-linkedin {
+    color: rgb(252,255,231);
+  }
+}
+/*Licenses Style*/
+.licenses {
+  text-align: right;
+}
+
+/* -------------------- MAIN PAGE -------------------- */
 /*Top bar style*/
 .topbar{
   position:fixed;
@@ -220,54 +287,43 @@ p{
   font-size: 64px;
 }
 
-/* Footer Style*/
-.footer-block {
-  display: flex;
-  padding: 32px;
-  width: 100%;
-  background-image: linear-gradient(rgb(181, 234, 234),rgb(186, 215, 233));
-}
-.footer-left {
-  float: left;
-  width: 60%;
-}
-.footer-right {
-  float: right;
-  width: 40%;
-}
-/*Project Style*/
-.project {
-  display: flex;
-}
-.citm-logo {
-  width:83px;
-  height:83px;
-}
-/*Credits Style*/
-.credits {
+/* -------------------- FIGURES -------------------- */
+/*Figures list Style*/
+.list-figures {
   padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 128px;
+  padding-right: 64px;
+}
+/*Figures nodes Style*/
+.list-figures-node {
   display: flex;
-}
-.iconoir-linkedin {
-  font-size: 64px;
-  color: rgb(6,0,71);
-}
-.button-footer {
-  border: none;
+  padding-left: 12px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-right: 74px;
+  margin-bottom: 32px;
+  height: 275px;
+  border-radius: 24px;
   text-decoration: none;
-  background-color: transparent;
+  background-color: white;
+  transition: padding-left 0.2s, padding-right 0.2s;
 }
-.button-footer:hover {
-  .iconoir-linkedin {
-    color: rgb(43,52,103);
-  }
+.list-figures-node:hover {
+  padding-left: 74px;
+  padding-right: 12px;
+  transition: padding-left 0.2s, padding-right 0.2s;
 }
-.button-footer:active {
-  .iconoir-linkedin {
-    color: rgb(252,255,231);
-  }
+.list-figures-node:active {
+  padding-left: 74px;
+  padding-right: 12px;
+  background-color: rgb(186, 215, 233);
 }
-/*Licenses Style*/
-.licenses {
-  text-align: right;
+.list-figures-node-image {
+  width: 374px;
+  height: 251px;
+  border-radius: 24px;
+}
+.list-figures-node-text {
+  padding-left: 44px;
 }
