@@ -35,12 +35,17 @@ p{
   padding-top: 96px;
   padding-left: 128px;
   padding-right: 128px;
+  padding-bottom: 16px;
 }
 .underline {
   width: 100%;
   height: 4px;
   border-radius: 2px;
   background-color: rgb(6,0,71);
+}
+/*Item title style*/
+.item-title {
+  padding-bottom: 16px;
 }
 
 /* Footer Style*/
@@ -327,3 +332,52 @@ p{
 .list-figures-node-text {
   padding-left: 44px;
 }
+
+/*Figure page Style*/
+.item-page {
+  display: flex;
+  padding-top: 96px;
+  padding-bottom: 89px;
+}
+.item-body {
+  padding-top: 32px;
+  padding-left: 50px;
+  padding-right: 128px;
+}
+/*Back button Style*/
+.back-button {
+  display: flex;
+  border: none;
+  border-radius: 10px;
+  margin-left: 24px;
+  background-color: white;
+  text-decoration: none;
+}
+.back-button-arrow {
+  height:min-content;
+  vertical-align: top;
+  margin-left: 26px;
+  margin-top: 22px;
+  margin-right: 8px;
+  transition: margin-left 0.2s, margin-right 0.2s;
+}
+.back-button:hover {
+  .back-button-arrow {
+    margin-left: 0px;
+    margin-right: 34px;
+    transition: margin-left 0.2s, margin-right 0.2s;
+  }
+}
+.back-button:active {
+  background-color: rgb(186, 215, 233);
+  .back-button-arrow {
+    margin-left: 0px;
+    margin-right: 34px;
+  }
+}
+.back-button-line {
+  height:min-content;
+  size:initial;
+  margin-right: 8px;
+}
+
