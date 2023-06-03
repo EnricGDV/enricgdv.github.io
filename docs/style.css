@@ -376,10 +376,14 @@ p{
   }
 }
 .back-button:active {
-  background-color: rgb(186, 215, 233);
   .back-button-arrow {
     margin-left: 0px;
     margin-right: 34px;
+    filter: hue-rotate(270deg) brightness(60%) saturate(80%);
+  }
+  .back-button-line
+  {
+    filter: hue-rotate(270deg) brightness(60%) saturate(80%);
   }
 }
 .back-button-line {
